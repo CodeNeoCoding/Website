@@ -70,7 +70,7 @@
           </li>
           -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" onclick="openSignUpForm()">Sign Up</a></li>
+          <li><a class="getstarted scrollto" onclick="openSignupForm()">Sign Up</a></li>
           <li><a class="getstarted scrollto" onclick="openLoginForm()">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -80,25 +80,25 @@
   </header><!-- End Header -->
 
 <!-- ======= Signup  ======= -->
-<div class="popup-overlay"></div>
-<div class="popup">
-  <div class="popup-close" onclick="closeSignUpForm()">x</div>
-  <div class="form">
-    <div class="avatar">
+<div class="popup-overlay2"></div>
+<div class="popup2">
+  <div class="popup-close2" onclick="closeSignupForm()">x</div>
+  <div class="form2">
+    <div class="avatar2">
       <img src="assets/img/CodeNeo.png" alt="">
     </div>
-    <div class="header">
-      Signup now!
+    <div class="header2">
+      Hello Future Coder!
     </div>
-    <div class="element">
-      <label for="username">Email Address</label>
-      <input type="text" id="username">
+    <div class="element2">
+      <label for="addEmail">Email Address</label>
+      <input type="text" id="addEmail">
     </div>
-    <div class="element">
-      <label for="password">Create Password</label>
-      <input type="password" id="password">
+    <div class="element2">
+      <label for="createPassword">Create Password</label>
+      <input type="password" id="createPassword">
     </div>
-    <div class="element">
+    <div class="element2">
       <button>Create Account</button>
     </div>
   </div>
@@ -113,10 +113,10 @@
       <img src="assets/img/CodeNeo.png" alt="">
     </div>
     <div class="header">
-      Member login
+      Welcome Back Coder!
     </div>
     <div class="element">
-      <label for="username">Username</label>
+      <label for="username">Email Address</label>
       <input type="text" id="username">
     </div>
     <div class="element">
@@ -139,7 +139,7 @@
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Explore New Heigts of Coding!</h1>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">Explore Classes</a>
+            <a class="btn-get-started scrollto" onclick="openSignupForm()" >Sign Up Now</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -1065,11 +1065,11 @@ function closeLoginForm(){
   document.body.classList.remove("showLoginForm");
 }
 
-function openSignUpForm(){
-  document.body.classList.add("showSignUpForm");
+function openSignupForm(){
+  document.body.classList.add("showSignupForm");
 }
-function closeSignUpForm(){
-  document.body.classList.remove("showSignUpForm");
+function closeSignupForm(){
+  document.body.classList.remove("showSignupForm");
 }
 
 
