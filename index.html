@@ -71,13 +71,40 @@
           -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="signup.html">Sign Up</a></li>
-          <li><a class="getstarted scrollto" href="login.html">Login</a></li>
+          <li><a class="getstarted scrollto" onclick="openLoginForm()">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Login Section ======= -->
+<div class="popup-overlay"></div>
+<div class="popup">
+  <div class="popup-close" onclick="closeLoginForm()">×</div>
+  <div class="form">
+    <div class="avatar">
+      <img src="assets/img/CodeNeo.png" alt="">
+    </div>
+    <div class="header">
+      Member login
+    </div>
+    <div class="element">
+      <label for="username">Username</label>
+      <input type="text" id="username">
+    </div>
+    <div class="element">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="element">
+      <button>Login</button>
+    </div>
+  </div>
+</div>
+
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -972,6 +999,17 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    
+function openLoginForm(){
+  document.body.classList.add("showLoginForm");
+}
+function closeLoginForm(){
+  document.body.classList.remove("showLoginForm");
+}
+
+
+  </script>
 </body>
 
 </html>
