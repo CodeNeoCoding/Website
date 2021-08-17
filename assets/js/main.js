@@ -259,20 +259,23 @@
 // Login Section
 
 // setup materialize components
-document.addEventListener('DOMContentLoaded', function() {
+//document.addEventListener('DOMContentLoaded', function() {
 
-  var modals = document.querySelectorAll('.modal');
-  M.Modal.init(modals);
-  
-});
+  //var modals = document.querySelectorAll('.modal');
+  //M.Modal.init(modals);
 
-const signupForm = document.querySelector.selector('#signupForm')
+//});
+
+const signupForm = document.querySelector.selector('#signupForm');
 signupForm.addEventListener('submit', (e) => {
   e.preventDefault();  
 
+  alert("hello");
+  
   //get user info
   const email = signupForm['signupEmail'].value;
-  const email = signupForm['signupPassword'].value;
+  const password = signupForm['signupPassword'].value;
+
 
   console.log(email, password)
 })
