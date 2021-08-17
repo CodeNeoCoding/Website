@@ -79,36 +79,35 @@
     </div>
   </header><!-- End Header -->
 
-<!-- ======= Signup  ======= -->
-
-<div class="popup-overlay2 modal">
-<div class="popup2">
-  <div class="popup-close2" onclick="closeSignupForm()">x</div>
-  <div class="form2">
-    <div class="avatar2">
-      <img src="assets/img/CodeNeo.png" alt="">
+  <!-- ======= Signup  ======= -->
+  <div class="popup-overlay2 modal"></div>
+  <div class="popup2">
+    <div class="popup-close2" onclick="closeSignupForm()">×</div>
+    <div class="form2">
+      <div class="avatar2">
+        <img src="assets/img/CodeNeo.png" alt="">
+      </div>
+      <div class="header2">
+        Hello Future Coder!
+      </div>
+      <form id="signupForm">
+      <div class="element2">
+        <label for="signup-email">Email Address</label>
+        <input type="email" id="signup-email" required>
+      </div>
+      <div class="element2">
+        <label for="signup-password">Create Password</label>
+        <input type="password" id="signup-password" required>
+      </div>
+      <div class="element2">
+        <button type="submit">Create Account</button>
+      </div>
+      </form>
     </div>
-    <div class="header2">
-      Hello Future Coder!
-    </div>
-    <form id="signupForm">
-    <div class="element2">
-      <label for="signupEmail">Email Address</label>
-      <input type="email" id="signupEmail" required>
-    </div>
-    <div class="element2">
-      <label for="signupPassword">Create Password</label>
-      <input type="password" id="signupPassword" required>
-    </div>
-    <div class="element2">
-      <button type="submit">Create Account</button>
-    </div>
-  </form>
   </div>
-</div>
 
 
-  <!-- ======= Login  ======= -->
+<!--  ======= Login  ======= -->
 <div class="popup-overlay modal"></div>
 <div class="popup">
   <div class="popup-close" onclick="closeLoginForm()">×</div>
@@ -129,7 +128,7 @@
       <input type="password" id="password" required>
     </div>
     <div class="element">
-      <button>Login</button>
+      <button type="submit">Login</button>
     </div>
     </form>
   </div>
@@ -137,7 +136,7 @@
 
 
 
-  <!-- ======= Hero Section ======= -->
+<!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
@@ -1061,6 +1060,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/login.js"></script>
 
   <script>
     
